@@ -1,22 +1,6 @@
 # example/urls.py
 from django.urls import path
 
-from example.views import index
-
-urlpatterns = [
-    path('', index),
-    path('hola', index),
-]
-
-
-
-
-
-
-
-# example/urls.py
-from django.urls import path
-
 from example.views import (
     index,
     not_found,
@@ -35,6 +19,7 @@ from example.views import (
 )
 
 urlpatterns = [
+    path('', index),
     path('index.html', index),
     path('hola', index),
     path('404.html', not_found),
